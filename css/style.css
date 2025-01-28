@@ -1,0 +1,116 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 3px solid #4B5563;
+}
+
+.navbar-brand {
+    color: #4B5563;
+    font-weight: 500;
+}
+
+.navbar-brand:hover {
+    color: #334155;
+}
+
+.navbar-nav > li > a {
+    color: #4B5563;
+    font-weight: 400;
+}
+
+li.active{
+    background-color:#f9f9f9;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item .caption {
+    font-size: 0.875rem; /* Smaller text size (14px) */
+    color: #555; /* Softer grey for modern look */
+    margin-top: 8px;
+    line-height: 1.4; /* Adjust line spacing for readability */
+}
+
+.portfolio-item .caption p {
+    margin-bottom: 6px;
+    line-height: 1.4;
+    font-weight: 400; /* Regular weight for captions */
+    color: #666; /* Slightly lighter grey */
+}
+
+.portfolio-item .caption a {
+    color: #4B5563; /* Grey navy for links */
+    text-decoration: underline; /* Adds a modern touch */
+    font-weight: 400; /* Lighter text for subtlety */
+    font-size: 0.875rem; /* Matches the caption size */
+    margin: 0 4px;
+}
+
+.portfolio-item .caption a:hover {
+    color: #334155; /* Darker grey navy for hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-4 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    color: #555;
+    opacity: 0.8;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
